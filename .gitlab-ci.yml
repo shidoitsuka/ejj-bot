@@ -19,6 +19,7 @@ test:
     paths: [coverage.lcov]
 
 code_quality:
+  image: node:latest
   coverage:
     /All files[^|]*\|[^|]*\s+([\d\.]+)/
   allow_failure: true
