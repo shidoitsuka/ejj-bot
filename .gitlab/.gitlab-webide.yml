@@ -1,4 +1,6 @@
 terminal:
+  image: 
+    name: node:latest
   before_script:
     - apt-get update
   script: sleep 60
