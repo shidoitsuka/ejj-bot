@@ -19,9 +19,5 @@ test:
 code_quality:
   coverage:
     /All files[^|]*\|[^|]*\s+([\d\.]+)/
-  allow_failure: true
   artifacts:
     paths: [gl-code-quality-report.json]
-  after_script:
-    - mv gl-code-quality-report.json coverage.lcov
-    - bash <(curl -s https://codecov.io/bash) -t $CODECOV_TOKEN
